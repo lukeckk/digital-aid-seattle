@@ -15,8 +15,8 @@ export default function DonationForm() {
   }
 
   return (
-    <div>
-      <h1 className="text-center font-bold text-2xl p-20">Donation Form</h1>
+    <div className="max-w-2xl mx-auto rounded-lg shadow-md p-6">
+      <h1 className="text-center font-bold text-2xl mb-6">Donation Form</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-2 gap-4">
           <div>
@@ -56,7 +56,7 @@ export default function DonationForm() {
             {errors.amount && <p className="text-red-500 text-sm">{errors.amount.message}</p>}
           </div>
         </div>
-        <div className="p-20 flex justify-center">
+        <div className="mt-6 flex justify-center">
           <button
             type="submit"
             className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
